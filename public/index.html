@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Node.js - Express - Dictionary App</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- custom style -->
+        <link href="css/main.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1>Dictionary App</h1>
+                <p>A sample app using Node.js and Express</p>
+            </div> <!--/.jumbotron-->
+
+            <div class="row">
+
+                <div class="col-xs-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Term:</label>
+                                    <input id="term" name="term" class="form-control" placeholder="new term..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Definition:</label>
+                                    <textarea id="defined" name="defined" class="form-control" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-default btn-block">Submit</button>
+                            </form>
+                        </div> <!--/.panel-heading-->
+                    </div> <!--/.panel-->
+                </div> <!--/.col-->
+
+                <div class="col-xs-9">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <dl id="term-list"></dl>
+                        </div> <!--/.panel-body-->
+                    </div> <!--/.panel-->
+                </div> <!--/.col-->
+
+            </div> <!--/.row-->
+
+        </div> <!--/.container-->
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- custom script -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
